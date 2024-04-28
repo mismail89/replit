@@ -1,0 +1,64 @@
+@keyframes moveBackground {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 0;
+      }
+  }
+  
+  #main-hero-sec {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, transparent, #346d65), url('https://cdna.artstation.com/p/assets/images/images/016/348/516/large/christian-vichi-1366x768.jpg?1551821546');
+    background-size: cover;
+    animation: moveBackground 8s linear infinite; /* Change the duration (10s) as needed */
+  }
+  
+.heading-hero{
+    width: 60%;
+}
+.heading-hero h3{
+    letter-spacing: 2px;
+}
+.heading-hero hr{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+.heading-hero h1{
+    width: 80%;
+}
+.heading-hero h2 p{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+
+}
+.heading-hero h2 p:hover {
+    transform: translateX(-10px); /* Move the element 10px to the left on hover */
+  }
+  
+
+  @media (max-width: 767px){
+    .heading-hero{
+        width: 90%;
+    }
+    .heading-hero h1{
+        font-size: 38px;
+        width: 100%;
+    }
+    .main-hero-sec{
+        height: 60vh;
+    }
+  }

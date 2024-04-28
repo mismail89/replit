@@ -1,0 +1,38 @@
+#wraper{
+    width: 300%; /* Set the width to accommodate all slides */
+    display: flex;
+    gap: 10px;
+}
+
+#main-slides{
+        width: 100%;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+.one-each-slide{
+    width: 350px;
+}
+#main-slides::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-arrows-move{
+    position: absolute;
+    top: 50%;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-arrows-move h1{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 25px;
+}

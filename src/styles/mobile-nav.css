@@ -1,0 +1,53 @@
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      width: 0%; /* Start with width at 0% */
+    }
+    100% {
+      transform: translateX(0);
+      width: 100%; /* End with width at 100% */
+    }
+  }
+  
+  .main-mobile-navbar-div {
+    /* top: 80px; */
+    position: absolute;
+    background-color: #2a403d;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    animation: slideInFromRight 1s ease-in-out; /* Apply animation */
+  }
+  
+  
+
+.main-mobile-navbar-div button h2{
+    width: 100%;
+    width: 75%;
+    /* background-color: red; */
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    animation: opacityyy 1s ease-in-out; /* Apply animation */
+
+}
+.main-mobile-navbar-div button{
+    border: 1px solid white;
+    animation: opacityyy 1s ease-in-out; /* Apply animation */
+
+}
+
+
+
+
+@keyframes opacityyy {
+    0% {
+     opacity: 0; 
+    }
+    100% {
+      opacity: 1;
+    }
+  }
